@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sultan Muhammad Arabi | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/tMTsPdk0/1000048453.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #f9fafb;
+            --border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, var(--primary), var(--primary-light));
+            color: white;
+            margin-bottom: 3rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            color: white;
+            font-size: 1.3rem;
+            transition: transform 0.3s;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 50px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        /* About Section */
+        .about-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        /* Info Lists */
+        .info-list {
+            list-style: none;
+            margin-bottom: 3rem;
+        }
+
+        .info-list li {
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-list i {
+            color: var(--primary);
+            margin-right: 1rem;
+            margin-top: 3px;
+        }
+
+        .info-title {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-subtitle {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 3rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-title i {
+            color: var(--primary);
+            margin-right: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .project-description {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: white;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-link {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 4rem 0 3rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            section {
+                padding: 3rem 0;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://i.ibb.co/tMTsPdk0/1000048453.png" alt="Sultan Muhammad Arabi" class="profile-img">
+            <h1>Sultan Muhammad Arabi</h1>
+            <p class="tagline">Full Stack Developer | Tech Innovator | Entrepreneur</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/sultanarabi161" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/sultanarabi161" class="social-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/sultanarabi161" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com/sultanarabi161" class="social-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:sultanarabi161@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a passionate full-stack developer and tech innovator based in Noakhali, Bangladesh. With expertise in web development, API solutions, and digital marketing, I create solutions that bridge technology and business needs.</p>
+                <p>My journey combines technical skills with entrepreneurial vision, allowing me to approach problems from multiple perspectives. I believe in continuous learning and pushing the boundaries of what's possible with code.</p>
+                <p>When I'm not coding, you can find me writing about technology, teaching programming concepts, or exploring new business opportunities in the digital space.</p>
+            </div>
+        </section>
+
+        <section id="personal-info">
+            <h2 class="section-title">Personal Information</h2>
+            <ul class="info-list">
+                <li>
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <div class="info-title">Name</div>
+                        <div class="info-subtitle">Sultan Muhammad Arabi</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <div class="info-title">Location</div>
+                        <div class="info-subtitle">Noakhali, Bangladesh</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-birthday-cake"></i>
+                    <div>
+                        <div class="info-title">Date of Birth</div>
+                        <div class="info-subtitle">April 21, 2003</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-language"></i>
+                    <div>
+                        <div class="info-title">Languages</div>
+                        <div class="info-subtitle">Bengali, English</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul class="info-list">
+                <li>
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <div class="info-title">Web Development</div>
+                        <div class="skills-container">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                            <span class="skill">PHP</span>
+                            <span class="skill">Python</span>
+                            <span class="skill">Node.js</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-server"></i>
+                    <div>
+                        <div class="info-title">API Development</div>
+                        <div class="skills-container">
+                            <span class="skill">REST APIs</span>
+                            <span class="skill">WebSocket</span>
+                            <span class="skill">Token Auth</span>
+                            <span class="skill">Proxy Systems</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <div class="info-title">Digital Marketing</div>
+                        <div class="skills-container">
+                            <span class="skill">SEO</span>
+                            <span class="skill">Content Writing</span>
+                            <span class="skill">Analytics</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+            <ul class="info-list">
+                <li>
+                    <i class="fas fa-laptop-code"></i>
+                    <div>
+                        <div class="info-title">Web Developer & Innovator</div>
+                        <div class="info-subtitle">Specialized in web development, API solutions, and problem-solving</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-headset"></i>
+                    <div>
+                        <div class="info-title">Customer Support Specialist</div>
+                        <div class="info-subtitle">Maijdee SuperNet - Provided technical client assistance</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div>
+                        <div class="info-title">Teacher</div>
+                        <div class="info-subtitle">Al-Ashraf Islamia Academy - Taught Islamic and technology subjects</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-lightbulb"></i>
+                    <div>
+                        <div class="info-title">Entrepreneur</div>
+                        <div class="info-subtitle">Co-founder and Share Partnership Manager at XIGZO STORE</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <ul class="info-list">
+                <li>
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <div class="info-title">Secondary & Higher Secondary</div>
+                        <div class="info-subtitle">Jamia Miftahul Ulum Dhannapur & Choroshahi Islamia Alim Madrasah</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-school"></i>
+                    <div>
+                        <div class="info-title">Primary Education</div>
+                        <div class="info-subtitle">Darul Azhar Model Madrasah</div>
+                    </div>
+                </li>
+                <li>
+                    <i class="fas fa-laptop"></i>
+                    <div>
+                        <div class="info-title">IT Training</div>
+                        <div class="info-subtitle">Amir Computer, Noakhali</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Notable Projects</h2>
+            <div class="project">
+                <h3 class="project-title"><i class="fas fa-tv"></i> IPTV Live Streaming Platform</h3>
+                <p class="project-description">Secure .m3u8 streaming technology for clients with token-based authentication and anti-sniffing measures.</p>
+            </div>
+            <div class="project">
+                <h3 class="project-title"><i class="fas fa-chart-bar"></i> Real-time View Tracking API</h3>
+                <p class="project-description">UUID-based analytics service that tracks viewer engagement in real-time with WebSocket technology.</p>
+            </div>
+            <div class="project">
+                <h3 class="project-title"><i class="fas fa-blog"></i> SEO-Optimized Blog Platform</h3>
+                <p class="project-description">Content management system with integrated SEO tools and custom writing assistants.</p>
+            </div>
+            <div class="project">
+                <h3 class="project-title"><i class="fas fa-lock"></i> Secure HLS Player</h3>
+                <p class="project-description">Tokenized and proxy-protected HLS player that prevents unauthorized access to streaming content.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <div class="info-title">Email</div>
+                        <div class="info-subtitle">sultanarabi161@gmail.com</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <div class="info-title">Phone</div>
+                        <div class="info-subtitle">+880 9638-068890</div>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div>
+                        <div class="info-title">Website</div>
+                        <div class="info-subtitle">sultanarabi.pages.dev</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#about" class="footer-link">About</a>
+                <a href="#skills" class="footer-link">Skills</a>
+                <a href="#experience" class="footer-link">Experience</a>
+                <a href="#projects" class="footer-link">Projects</a>
+                <a href="#contact" class="footer-link">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Sultan Muhammad Arabi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
