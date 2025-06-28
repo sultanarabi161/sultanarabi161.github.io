@@ -54,6 +54,27 @@ http://mxonlive.atwebpages.com/filex/index.php/495265.m3u8
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/tt/tnt-sports-uk-us-uk.png" group-title="Sports", TNT Sports 9
 http://mxonlive.atwebpages.com/filex/index.php/495266.m3u8
 
+#EXTINF:-1 tvg-logo="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0021/7677/brand.gif?itok=CebnsQha" group-title="Sports", SPORTV 1
+http://mxonlive.atwebpages.com/filex/index.php/304301.m3u8
+
+#EXTINF:-1 tvg-logo="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0021/7677/brand.gif?itok=CebnsQha" group-title="Sports", SPORTV 2
+http://mxonlive.atwebpages.com/filex/index.php/304302.m3u8
+
+#EXTINF:-1 tvg-logo="https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0021/7677/brand.gif?itok=CebnsQha" group-title="Sports", SPORTV 3
+http://mxonlive.atwebpages.com/filex/index.php/304303.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dd/DAZN_BoxedLogo_01_RGB.png" group-title="Sports", DAZN 1
+http://mxonlive.atwebpages.com/filex/index.php/292976.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dd/DAZN_BoxedLogo_01_RGB.png" group-title="Sports", DAZN 2
+http://mxonlive.atwebpages.com/filex/index.php/292977.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dd/DAZN_BoxedLogo_01_RGB.png" group-title="Sports", DAZN 3
+http://mxonlive.atwebpages.com/filex/index.php/292978.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dd/DAZN_BoxedLogo_01_RGB.png" group-title="Sports", DAZN 4
+http://mxonlive.atwebpages.com/filex/index.php/292979.m3u8
+
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ss/sports-18-in.png" group-title="Sports", DD SPORTS
 http://mxonlive.atwebpages.com/filex/index.php/247163.m3u8
 
