@@ -3,6 +3,12 @@
 # Generated on: 2025-06-28
 # User: 
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/11/T_Sports_logo.png" group-title="Sports", T-SPORTS
+http://mxonlive.atwebpages.com/xott/index.php/167590.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/ICC_T20_World_Cup_2022_Logo.png" group-title="Sports", T20 WORLD CUP
+http://mxonlive.atwebpages.com/xott/index.php/219643.m3u8
+
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-1-in.png" group-title="Sports", SONY SPORTS 1 FHD
 http://mxonlive.atwebpages.com/filex/index.php/247155.m3u8
 
@@ -75,6 +81,15 @@ http://mxonlive.atwebpages.com/filex/index.php/292978.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/dd/DAZN_BoxedLogo_01_RGB.png" group-title="Sports", DAZN 4
 http://mxonlive.atwebpages.com/filex/index.php/292979.m3u8
 
+#EXTINF:-1 tvg-logo="http://logo.opplextv.com/logo/criclifelogo.png" group-title="Sports", StarzPlay CricLife 1
+http://mxonlive.atwebpages.com/xott/index.php/371469.m3u8
+
+#EXTINF:-1 tvg-logo="http://logo.opplextv.com/logo/criclifelogo.png" group-title="Sports", StarzPlay CricLife 2
+http://mxonlive.atwebpages.com/xott/index.php/371470.m3u8
+
+#EXTINF:-1 tvg-logo="http://logo.opplextv.com/logo/criclifelogo.png" group-title="Sports", StarzPlay CricLife 3
+http://mxonlive.atwebpages.com/xott/index.php/371471.m3u8
+
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ss/sports-18-in.png" group-title="Sports", DD SPORTS
 http://mxonlive.atwebpages.com/filex/index.php/247163.m3u8
 
@@ -90,5 +105,20 @@ http://mxonlive.atwebpages.com/filex/index.php/247169.m3u8
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/pp/ptv_sports_pk.png" group-title="Sports", PTV SPORTS FHD
 http://mxonlive.atwebpages.com/filex/index.php/247170.m3u8
 
-#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/tt/ten_sports_in_pakistan.png" group-title=" Sports",TEN SPORTS FHD
+#EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/tt/ten_sports_in_pakistan.png" group-title=" Sports", TEN SPORTS FHD
 http://mxonlive.atwebpages.com/filex/index.php/247171.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d3/Sports18_logo.svg" group-title="Sports", Sports 18
+http://mxonlive.atwebpages.com/xott/index.php/382205.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.epg.best/my/AstroOnDemand361.my.png" group-title="Sports", Astro Cricket HD
+http://mxonlive.atwebpages.com/xott/index.php/167581.m3u8
+
+#EXTINF:-1 tvg-logo="https://5gtv.online:2053/logo/willowxtra1.png" group-title="Sports", Willow Xtra
+http://mxonlive.atwebpages.com/xott/index.php/167582.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.epg.best/us/WillowCricket.us.png" group-title="Sports", Willow
+http://mxonlive.atwebpages.com/xott/index.php/167583.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Reliance_Jio_Logo_%28October_2015%29.svg/1200px-Reliance_Jio_Logo_%28October_2015%29.svg.png" group-title="Sports", jio Cricket
+http://mxonlive.atwebpages.com/xott/index.php/206297.m3u8
