@@ -3,11 +3,8 @@
 # Generated on: 2025-06-28
 # User: 
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/11/T_Sports_logo.png" group-title="Sports", T-SPORTS
-http://mxonlive.atwebpages.com/xott/index.php/167590.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/5f/ICC_T20_World_Cup_2022_Logo.png" group-title="Sports", T20 WORLD CUP
-http://mxonlive.atwebpages.com/xott/index.php/219643.m3u8
+#EXTINF:-1 tvg-logo="https://tse1.mm.bing.net/th/id/OIP.nBOx5eStTn3_uay8si_qdwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" group-title="Sports", T-SPORTS
+https://live.tsports.com/mobile_hls/tsports_live_3/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/ss/sony-sports-ten-1-in.png" group-title="Sports", SONY SPORTS 1 FHD
 http://mxonlive.atwebpages.com/filex/index.php/247155.m3u8
@@ -108,7 +105,7 @@ http://mxonlive.atwebpages.com/filex/index.php/247170.m3u8
 #EXTINF:-1 tvg-logo="https://www.lyngsat.com/logo/tv/tt/ten_sports_in_pakistan.png" group-title=" Sports", TEN SPORTS FHD
 http://mxonlive.atwebpages.com/filex/index.php/247171.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/d/d3/Sports18_logo.svg" group-title="Sports", Sports 18
+#EXTINF:-1 tvg-logo="https://static.theprint.in/wp-content/uploads/2022/04/ima3022041510082120220415103735.jpg" group-title="Sports", Sports 18
 http://mxonlive.atwebpages.com/xott/index.php/382205.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.epg.best/my/AstroOnDemand361.my.png" group-title="Sports", Astro Cricket HD
