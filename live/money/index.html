@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Transfer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Hind Siliguri', 'SolaimanLipi', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .transfer-container {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: #2a4365;
+            margin-bottom: 40px;
+            font-size: 28px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .accounts {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .account {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .account-logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .account-name {
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #2d3748;
+        }
+
+        .account-balance {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .from-account .account-balance {
+            color: #e53e3e;
+        }
+
+        .to-account .account-balance {
+            color: #38a169;
+        }
+
+        .money-transfer {
+            position: absolute;
+            font-size: 30px;
+            animation: moneyMove 3s infinite;
+        }
+
+        @keyframes moneyMove {
+            0% { left: 22%; opacity: 0; transform: scale(0.5); }
+            20% { opacity: 1; transform: scale(1.3); }
+            80% { opacity: 1; transform: scale(1.3); }
+            100% { left: 72%; opacity: 0; transform: scale(0.5); }
+        }
+
+        .notification {
+            margin-top: 40px;
+            font-size: 20px;
+            color: #2d3748;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .emoji {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+
+        .credit-footer {
+            margin-top: 50px;
+            padding: 15px;
+            font-size: 14px;
+            color: #4a5568;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .accounts {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            @keyframes moneyMove {
+                0% { top: 20%; left: 50%; opacity: 0; transform: scale(0.5) translateX(-50%); }
+                20% { opacity: 1; transform: scale(1.3) translateX(-50%); }
+                80% { opacity: 1; transform: scale(1.3) translateX(-50%); }
+                100% { top: 60%; left: 50%; opacity: 0; transform: scale(0.5) translateX(-50%); }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="transfer-container">
+        <h1>Money Transfer</h1>
+        
+        <div class="accounts">
+            <div class="account from-account">
+                <div class="account-logo" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/1200px-Emblem_of_India.svg.png');"></div>
+                <div class="account-name">RAW</div>
+                <div class="account-balance" id="raw-balance">₹200,000,000,000</div>
+            </div>
+            
+            <div class="money-transfer">💰</div>
+            
+            <div class="account to-account">
+                <div class="account-logo" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHc_8UXobqzdgVecxQFt6mPe32MJx7Znl7UTljfwA1C8Q4KfT28OSLTQi2&s=10');"></div>
+                <div class="account-name">Asif Adnan</div>
+                <div class="account-balance" id="my-balance">₹1,000</div>
+            </div>
+        </div>
+        
+        <div class="notification">
+             টাকা ট্রান্সফার হচ্ছে! 
+            <span class="emoji">✨</span>
+        </div>
+    </div>
+    
+    <div class="credit-footer">
+        © 2025 Transfer Notification System | Created by Sultan 
+    </div>
+     <a href='http://www.freevisitorcounters.com'>Free Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ce95fdeccddf0a450bd89b6a9f681b6b99ff564f'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1361134/t/5"></script>
+
+    <script>
+        // Animate money transfer and update balances
+        function startTransfer() {
+            let rawAmount = 200000000000;
+            let myAmount = 1000;
+            const transferAmount = 500000000;
+            
+            setInterval(() => {
+                // Update balances
+                rawAmount -= transferAmount;
+                myAmount += transferAmount;
+                
+                document.getElementById('raw-balance').textContent = '₹' + rawAmount.toLocaleString('en-IN');
+                document.getElementById('my-balance').textContent = '₹' + myAmount.toLocaleString('en-IN');
+                
+            }, 3000);
+        }
+        
+        // Start animation when page loads
+        window.onload = startTransfer;
+    </script>
+</body>
+</html>
