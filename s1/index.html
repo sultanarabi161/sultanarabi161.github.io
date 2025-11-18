@@ -206,28 +206,27 @@
         .sultanarabi161-telegram-section {
             background: linear-gradient(135deg, #0088cc 0%, #00aced 100%);
             color: white;
-            border-radius: 0;
             padding: 40px 30px;
             margin: 40px 0;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             position: relative;
             overflow: hidden;
+            border-radius: 0;
         }
 
         .sultanarabi161-telegram-btn {
             background-color: white;
             color: #0088cc;
             border: none;
-            padding: 12px 30px;
-            border-radius: 0;
+            padding: 12px 20px;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             transition: all 0.3s;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
             text-decoration: none;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 0;
         }
 
         .sultanarabi161-telegram-btn:hover {
@@ -235,29 +234,6 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             color: #0088cc;
             text-decoration: none;
-        }
-
-        .sultanarabi161-telegram-action-container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .sultanarabi161-visitor-count {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            background: rgba(255,255,255,0.1);
-            padding: 8px 15px;
-            border-radius: 0;
-        }
-
-        .sultanarabi161-visitor-count i {
-            font-size: 1.2rem;
         }
 
         /* Footer Styles */
@@ -323,12 +299,6 @@
             z-index: 2;
         }
 
-        .sultanarabi161-telegram-icon {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            display: block;
-        }
-
         @media (max-width: 767.98px) {
             .sultanarabi161-footer .text-center {
                 text-align: center;
@@ -357,20 +327,6 @@
                 padding: 10px 25px;
                 font-size: 1rem;
             }
-            
-            .sultanarabi161-telegram-icon {
-                font-size: 1.8rem;
-            }
-            
-            .sultanarabi161-telegram-action-container {
-                justify-content: center;
-                gap: 15px;
-            }
-            
-            .sultanarabi161-visitor-count {
-                font-size: 0.9rem;
-                padding: 6px 12px;
-            }
         }
 
         @media (max-width: 575.98px) {
@@ -380,11 +336,6 @@
             
             .sultanarabi161-telegram-section p {
                 font-size: 0.95rem;
-            }
-            
-            .sultanarabi161-telegram-action-container {
-                flex-direction: column;
-                align-items: center;
             }
         }
     </style>
@@ -658,19 +609,20 @@
                 <div class="sultanarabi161-telegram-content">
                     <div class="row align-items-center">
                         <div class="col-md-8">
-                            <i class="fab fa-telegram-plane sultanarabi161-telegram-icon"></i>
                             <h3>📲 Need Help?</h3>
                             <p class="mb-0">If you need help with any of these tools or want a custom solution, feel free to message me on Telegram. I'm always happy to help with web development, SEO, or any tech-related projects!</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="sultanarabi161-telegram-action-container">
-                                <div class="sultanarabi161-visitor-count">
-                                    <i class="fas fa-eye"></i>
-                                    <span>Visitor: <img src="https://visitor-badge.laobi.icu/badge?page_id=sultanarabi161.github.io" alt="Visitor Badge" style="display: inline; border: none;" /></span>
-                                </div>
+                        <div class="col-md-4 text-md-right text-center mt-3 mt-md-0">
+                            <div class="d-flex flex-column align-items-center">
                                 <a href="https://t.me/sultanarabi161" class="sultanarabi161-telegram-btn" target="_blank">
-                                    <i class="fab fa-telegram-plane"></i>
-                                    Message Me on Telegram
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <div class="d-flex align-items-center mr-2">
+                                            <span class="mr-1">—</span>
+                                            <img src="https://visitor-badge.laobi.icu/badge?page_id=sultanarabi161.github.io" alt="Visitor Badge" style="border: none; box-shadow: none; height: 20px;" />
+                                        </div>
+                                        <i class="fab fa-telegram-plane mr-1"></i>
+                                        <span>Message Me on Telegram</span>
+                                    </div>
                                 </a>
                             </div>
                         </div>
