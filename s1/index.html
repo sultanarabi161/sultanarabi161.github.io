@@ -67,26 +67,26 @@
 
     <style>
         :root {
-            --primary-color: #2575fc;
-            --secondary-color: #6a11cb;
-            --accent-color: #00b894;
+            --sultanarabi161-primary-color: #2575fc;
+            --sultanarabi161-secondary-color: #6a11cb;
+            --sultanarabi161-accent-color: #00b894;
         }
         
-        body {
+        body.sultanarabi161-body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f8f9fa;
             line-height: 1.6;
         }
 
-        .jumbotron {
-            background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+        .sultanarabi161-jumbotron {
+            background: linear-gradient(135deg, var(--sultanarabi161-secondary-color) 0%, var(--sultanarabi161-primary-color) 100%);
             color: white;
             border-radius: 0;
             padding: 4rem 2rem;
             margin-bottom: 0;
         }
 
-        .profile-img {
+        .sultanarabi161-profile-img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
@@ -95,37 +95,37 @@
             object-fit: cover;
         }
 
-        .section-title {
+        .sultanarabi161-section-title {
             position: relative;
             padding-bottom: 15px;
             margin-bottom: 30px;
             font-weight: 700;
         }
 
-        .section-title:after {
+        .sultanarabi161-section-title:after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
             width: 50px;
             height: 3px;
-            background: var(--primary-color);
+            background: var(--sultanarabi161-primary-color);
         }
 
-        .card {
+        .sultanarabi161-card {
             border: none;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s;
             margin-bottom: 20px;
-            border-radius: 10px;
+            border-radius: 0;
             overflow: hidden;
         }
 
-        .card:hover {
+        .sultanarabi161-card:hover {
             transform: translateY(-5px);
         }
 
-        .skill-badge {
+        .sultanarabi161-skill-badge {
             display: inline-block;
             background-color: #e9ecef;
             padding: 8px 15px;
@@ -135,43 +135,43 @@
             transition: all 0.3s;
         }
 
-        .skill-badge:hover {
-            background-color: var(--primary-color);
+        .sultanarabi161-skill-badge:hover {
+            background-color: var(--sultanarabi161-primary-color);
             color: white;
         }
 
-        .social-icon {
+        .sultanarabi161-social-icon {
             font-size: 1.5rem;
             margin-right: 15px;
             color: #6c757d;
             transition: color 0.3s;
         }
 
-        .social-icon:hover {
-            color: var(--primary-color);
+        .sultanarabi161-social-icon:hover {
+            color: var(--sultanarabi161-primary-color);
         }
 
-        .timeline {
+        .sultanarabi161-timeline {
             position: relative;
             padding-left: 30px;
         }
 
-        .timeline:before {
+        .sultanarabi161-timeline:before {
             content: '';
             position: absolute;
             left: 0;
             top: 0;
             bottom: 0;
             width: 2px;
-            background: var(--primary-color);
+            background: var(--sultanarabi161-primary-color);
         }
 
-        .timeline-item {
+        .sultanarabi161-timeline-item {
             position: relative;
             margin-bottom: 30px;
         }
 
-        .timeline-item:before {
+        .sultanarabi161-timeline-item:before {
             content: '';
             position: absolute;
             left: -36px;
@@ -179,94 +179,217 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: var(--primary-color);
+            background: var(--sultanarabi161-primary-color);
         }
 
-        .navbar-brand {
+        .sultanarabi161-navbar-brand {
             font-weight: 700;
         }
         
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
+        .sultanarabi161-btn-primary {
+            background-color: var(--sultanarabi161-primary-color);
+            border-color: var(--sultanarabi161-primary-color);
+            border-radius: 0;
         }
         
-        .btn-primary:hover {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
+        .sultanarabi161-btn-primary:hover {
+            background-color: var(--sultanarabi161-secondary-color);
+            border-color: var(--sultanarabi161-secondary-color);
+            transform: translateY(-2px);
         }
         
-        .highlight {
-            color: var(--primary-color);
+        .sultanarabi161-highlight {
+            color: var(--sultanarabi161-primary-color);
             font-weight: 600;
         }
 
+        .sultanarabi161-telegram-section {
+            background: linear-gradient(135deg, #0088cc 0%, #00aced 100%);
+            color: white;
+            border-radius: 0;
+            padding: 40px 30px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sultanarabi161-telegram-btn {
+            background-color: white;
+            color: #0088cc;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .sultanarabi161-telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            color: #0088cc;
+            text-decoration: none;
+        }
+
+        .sultanarabi161-telegram-action-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .sultanarabi161-visitor-count {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 0;
+        }
+
+        .sultanarabi161-visitor-count i {
+            font-size: 1.2rem;
+        }
+
         /* Footer Styles */
-        footer {
+        footer.sultanarabi161-footer {
             background-color: #343a40;
             color: white;
             padding: 40px 0;
             font-size: 14px;
+            border-radius: 0;
         }
 
-        footer h5 {
+        .sultanarabi161-footer h5 {
             font-size: 18px;
             margin-bottom: 20px;
             color: #f8f9fa;
         }
 
-        footer p, footer ul {
+        .sultanarabi161-footer p, .sultanarabi161-footer ul {
             margin-bottom: 10px;
         }
 
-        footer a {
+        .sultanarabi161-footer a {
             color: #adb5bd;
             text-decoration: none;
         }
 
-        footer a:hover {
+        .sultanarabi161-footer a:hover {
             color: #f8f9fa;
             text-decoration: underline;
         }
 
-        footer .list-unstyled {
+        .sultanarabi161-footer .list-unstyled {
             padding-left: 0;
             list-style: none;
         }
 
-        footer .text-center {
+        .sultanarabi161-footer .text-center {
             border-top: 1px solid #495057;
             padding-top: 10px;
             margin-top: 20px;
             font-size: 13px;
         }
         
-        .logo {
+        .sultanarabi161-logo {
             height: 40px;
             margin-right: 10px;
         }
 
+        .sultanarabi161-form-control {
+            border-radius: 0;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            transition: all 0.3s;
+        }
+
+        .sultanarabi161-form-control:focus {
+            border-color: var(--sultanarabi161-primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(37, 117, 252, 0.25);
+        }
+
+        .sultanarabi161-telegram-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .sultanarabi161-telegram-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
         @media (max-width: 767.98px) {
-            footer .text-center {
+            .sultanarabi161-footer .text-center {
                 text-align: center;
             }
             
-            footer .col-md-6, footer .col-md-3 {
+            .sultanarabi161-footer .col-md-6, .sultanarabi161-footer .col-md-3 {
                 margin-bottom: 20px;
             }
             
-            .jumbotron {
+            .sultanarabi161-jumbotron {
                 padding: 2rem 1rem;
             }
             
-            .profile-img {
+            .sultanarabi161-profile-img {
                 width: 150px;
                 height: 150px;
+            }
+            
+            .sultanarabi161-telegram-section {
+                padding: 30px 20px;
+                margin: 30px 0;
+                text-align: center;
+            }
+            
+            .sultanarabi161-telegram-btn {
+                padding: 10px 25px;
+                font-size: 1rem;
+            }
+            
+            .sultanarabi161-telegram-icon {
+                font-size: 1.8rem;
+            }
+            
+            .sultanarabi161-telegram-action-container {
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .sultanarabi161-visitor-count {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .sultanarabi161-telegram-section h3 {
+                font-size: 1.5rem;
+            }
+            
+            .sultanarabi161-telegram-section p {
+                font-size: 0.95rem;
+            }
+            
+            .sultanarabi161-telegram-action-container {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
-<body>
+<body class="sultanarabi161-body">
     <!-- Google Analytics Script (Place your GA4 ID here) -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
     <script>
@@ -277,8 +400,8 @@
     </script> -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#home">
-            <img src="https://i.ibb.co/tMTsPdk0/1000048453.png" alt="Sultan Arabi Logo" class="logo">
+        <a class="navbar-brand sultanarabi161-navbar-brand" href="#home">
+            <img src="https://i.ibb.co/tMTsPdk0/1000048453.png" alt="Sultan Arabi Logo" class="sultanarabi161-logo">
             Sultan Arabi
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -298,9 +421,9 @@
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="jumbotron text-center">
+        <section id="home" class="sultanarabi161-jumbotron text-center">
             <div class="container">
-                <img src="https://i.ibb.co/tMTsPdk0/1000048453.png" alt="Sultan Muhammad Arabi - Web Developer & Tech Innovator" class="profile-img mb-4">
+                <img src="https://i.ibb.co/tMTsPdk0/1000048453.png" alt="Sultan Muhammad Arabi - Web Developer & Tech Innovator" class="sultanarabi161-profile-img mb-4">
                 <h1 class="display-4">Sultan Muhammad Arabi</h1>
                 <p class="lead">Web Developer, Tech Innovator, Entrepreneur, Writer, and Customer Support Specialist</p>
                 <p>Based in Noakhali, Bangladesh</p>
@@ -310,7 +433,7 @@
         <!-- About Section -->
         <section id="about" class="py-5 bg-white">
             <div class="container">
-                <h2 class="section-title">About <span class="highlight">Sultan Muhammad Arabi</span></h2>
+                <h2 class="sultanarabi161-section-title">About <span class="sultanarabi161-highlight">Sultan Muhammad Arabi</span></h2>
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Personal Information</h4>
@@ -349,26 +472,26 @@
         <!-- Skills Section -->
         <section id="skills" class="py-5 bg-light">
             <div class="container">
-                <h2 class="section-title">Technical Skills of <span class="highlight">Sultan Arabi</span></h2>
+                <h2 class="sultanarabi161-section-title">Technical Skills of <span class="sultanarabi161-highlight">Sultan Arabi</span></h2>
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Web Development</h4>
                         <div>
-                            <span class="skill-badge">HTML</span>
-                            <span class="skill-badge">CSS</span>
-                            <span class="skill-badge">JavaScript</span>
-                            <span class="skill-badge">PHP</span>
-                            <span class="skill-badge">Web Designer</span>
-                            <span class="skill-badge">Web Developer</span>
+                            <span class="sultanarabi161-skill-badge">HTML</span>
+                            <span class="sultanarabi161-skill-badge">CSS</span>
+                            <span class="sultanarabi161-skill-badge">JavaScript</span>
+                            <span class="sultanarabi161-skill-badge">PHP</span>
+                            <span class="sultanarabi161-skill-badge">Web Designer</span>
+                            <span class="sultanarabi161-skill-badge">Web Developer</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <h4>Backend & Data Analysis</h4>
                         <div>
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">Node.js</span>
-                            <span class="skill-badge">Prompt Engineer</span>
-                            <span class="skill-badge">Social Engineering</span>
+                            <span class="sultanarabi161-skill-badge">Python</span>
+                            <span class="sultanarabi161-skill-badge">Node.js</span>
+                            <span class="sultanarabi161-skill-badge">Prompt Engineer</span>
+                            <span class="sultanarabi161-skill-badge">Social Engineering</span>
                         </div>
                     </div>
                 </div>
@@ -376,12 +499,12 @@
                     <div class="col-12">
                         <h4>Specialized Services</h4>
                         <div>
-                            <span class="skill-badge">ISP Billing Software</span>
-                            <span class="skill-badge">WiFi User Customer Online Support</span>
-                            <span class="skill-badge">SEO & Digital Marketing</span>
-                            <span class="skill-badge">Blog Content</span>
-                            <span class="skill-badge">Traffic Analysis</span>
-                            <span class="skill-badge">SEO Frameworks</span>
+                            <span class="sultanarabi161-skill-badge">ISP Billing Software</span>
+                            <span class="sultanarabi161-skill-badge">WiFi User Customer Online Support</span>
+                            <span class="sultanarabi161-skill-badge">SEO & Digital Marketing</span>
+                            <span class="sultanarabi161-skill-badge">Blog Content</span>
+                            <span class="sultanarabi161-skill-badge">Traffic Analysis</span>
+                            <span class="sultanarabi161-skill-badge">SEO Frameworks</span>
                         </div>
                     </div>
                 </div>
@@ -391,10 +514,10 @@
         <!-- Projects Section -->
         <section id="projects" class="py-5 bg-white">
             <div class="container">
-                <h2 class="section-title">Notable Projects by <span class="highlight">sultanarabi161</span></h2>
+                <h2 class="sultanarabi161-section-title">Notable Projects by <span class="sultanarabi161-highlight">sultanarabi161</span></h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">IPTV Live Streaming Platform</h5>
                                 <p class="card-text">Secure .m3u8 streaming technology for clients with advanced features and user management.</p>
@@ -402,7 +525,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">Real-time Text Share Web</h5>
                                 <p class="card-text">A platform for real-time text sharing and collaboration with multiple users simultaneously.</p>
@@ -412,7 +535,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">SEO-Enriched Site</h5>
                                 <p class="card-text">Informative blogs with custom digital writing tools and optimized content for better search rankings.</p>
@@ -420,7 +543,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">Live TV Channels Watch Script</h5>
                                 <p class="card-text">Web-based solution for streaming live TV channels with a user-friendly interface.</p>
@@ -430,7 +553,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">Xtreme Server Restream</h5>
                                 <p class="card-text">Advanced server restreaming solution for high-quality media delivery.</p>
@@ -438,7 +561,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="sultanarabi161-card">
                             <div class="card-body">
                                 <h5 class="card-title">Mac Server Restream</h5>
                                 <p class="card-text">Specialized restreaming solution optimized for Mac server environments.</p>
@@ -452,34 +575,34 @@
         <!-- Experience Section -->
         <section id="experience" class="py-5 bg-light">
             <div class="container">
-                <h2 class="section-title">Employment & Experience of <span class="highlight">Sultan Muhammad Arabi</span></h2>
-                <div class="timeline">
-                    <div class="timeline-item">
+                <h2 class="sultanarabi161-section-title">Employment & Experience of <span class="sultanarabi161-highlight">Sultan Muhammad Arabi</span></h2>
+                <div class="sultanarabi161-timeline">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Teacher</h5>
                         <p class="text-muted">Al-Ashraf Islamia Academy</p>
                         <p>Taught Islamic and technology-based subjects to students.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Customer Support Specialist</h5>
                         <p class="text-muted">Maijdee SuperNet</p>
                         <p>Provided client assistance and technical support services.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Imam & Religious Leader</h5>
                         <p class="text-muted">Various Institutions</p>
                         <p>Served as an Imam and provided religious guidance.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Developer & Innovator</h5>
                         <p class="text-muted">Freelance</p>
                         <p>Specialized in web development, API solutions, and problem-solving.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Entrepreneur</h5>
                         <p class="text-muted">XIGZO STORE</p>
                         <p>Co-founder and Share Partnership Manager at XIGZO STORE.</p>
                     </div>
-                    <div class="timeline-item">
+                    <div class="sultanarabi161-timeline-item">
                         <h5>Writer</h5>
                         <p class="text-muted">sultanarabi.news.blog</p>
                         <p>Publishes blogs and articles on various topics.</p>
@@ -491,7 +614,7 @@
         <!-- Contact Section -->
         <section id="contact" class="py-5 bg-white">
             <div class="container">
-                <h2 class="section-title">Contact <span class="highlight">Sultan Arabi</span></h2>
+                <h2 class="sultanarabi161-section-title">Contact <span class="sultanarabi161-highlight">Sultan Arabi</span></h2>
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Get In Touch</h4>
@@ -502,28 +625,55 @@
                             <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Noakhali, Bangladesh</li>
                         </ul>
                         <div class="mt-4">
-                            <a href="https://www.linkedin.com/in/sultanarabi161" class="social-icon" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://twitter.com/sultanarabi161" class="social-icon" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/sultanarabi161" class="social-icon" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
-                            <a href="https://github.com/sultanarabi161" class="social-icon" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/sultanarabi161" class="sultanarabi161-social-icon" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/sultanarabi161" class="sultanarabi161-social-icon" target="_blank" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/sultanarabi161" class="sultanarabi161-social-icon" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/sultanarabi161" class="sultanarabi161-social-icon" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <form id="contactForm">
+                        <form id="sultanarabi161-contactForm">
                             <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="sultanarabi161-name">Name</label>
+                                <input type="text" class="form-control sultanarabi161-form-control" id="sultanarabi161-name" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="sultanarabi161-email">Email</label>
+                                <input type="email" class="form-control sultanarabi161-form-control" id="sultanarabi161-email" placeholder="Your Email" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                                <label for="sultanarabi161-message">Message</label>
+                                <textarea class="form-control sultanarabi161-form-control" id="sultanarabi161-message" rows="4" placeholder="Your Message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <button type="submit" class="btn sultanarabi161-btn-primary">Send Message</button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Telegram Help Section with Visitor Badge -->
+        <section class="sultanarabi161-telegram-section">
+            <div class="container">
+                <div class="sultanarabi161-telegram-content">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <i class="fab fa-telegram-plane sultanarabi161-telegram-icon"></i>
+                            <h3>📲 Need Help?</h3>
+                            <p class="mb-0">If you need help with any of these tools or want a custom solution, feel free to message me on Telegram. I'm always happy to help with web development, SEO, or any tech-related projects!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sultanarabi161-telegram-action-container">
+                                <div class="sultanarabi161-visitor-count">
+                                    <i class="fas fa-eye"></i>
+                                    <span>Visitor: <img src="https://visitor-badge.laobi.icu/badge?page_id=sultanarabi161.github.io" alt="Visitor Badge" style="display: inline; border: none;" /></span>
+                                </div>
+                                <a href="https://t.me/sultanarabi161" class="sultanarabi161-telegram-btn" target="_blank">
+                                    <i class="fab fa-telegram-plane"></i>
+                                    Message Me on Telegram
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -531,37 +681,37 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white">
+    <footer class="sultanarabi161-footer bg-dark text-white">
         <div class="container py-4">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>About Sultan Muhammad Arabi</h5>
-                    <p>A multi-talented individual passionate about technology and learning new things. Web developer, tech innovator, entrepreneur, writer, and customer support specialist based in Noakhali, Bangladesh.</p>
-                    <p><strong>Also known as:</strong> Sultan Arabi, sultanarabi, sultanarabi161</p>
+                    <h5 class="sultanarabi161-footer">About Sultan Muhammad Arabi</h5>
+                    <p class="sultanarabi161-footer">A multi-talented individual passionate about technology and learning new things. Web developer, tech innovator, entrepreneur, writer, and customer support specialist based in Noakhali, Bangladesh.</p>
+                    <p class="sultanarabi161-footer"><strong>Also known as:</strong> Sultan Arabi, sultanarabi, sultanarabi161</p>
                 </div>
                 <div class="col-md-3">
-                    <h5>Contact Information</h5>
-                    <ul class="list-unstyled">
-                        <li>Email: <a href="mailto:sultanarabi161@gmail.com">sultanarabi161@gmail.com</a></li>
+                    <h5 class="sultanarabi161-footer">Contact Information</h5>
+                    <ul class="list-unstyled sultanarabi161-footer">
+                        <li>Email: <a href="mailto:sultanarabi161@gmail.com" class="sultanarabi161-footer">sultanarabi161@gmail.com</a></li>
                         <li>Phone: +880 9638-068890</li>
-                        <li>Website: <a href="https://sultanarabi.news.blog" target="_blank">sultanarabi.news.blog</a></li>
-                        <li>Portfolio: <a href="https://sultanarabi.pages.dev" target="_blank">sultanarabi.pages.dev</a></li>
+                        <li>Website: <a href="https://sultanarabi.news.blog" target="_blank" class="sultanarabi161-footer">sultanarabi.news.blog</a></li>
+                        <li>Portfolio: <a href="https://sultanarabi.pages.dev" target="_blank" class="sultanarabi161-footer">sultanarabi.pages.dev</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h5>Follow Me</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.linkedin.com/in/sultanarabi161" target="_blank">LinkedIn</a></li>
-                        <li><a href="https://github.com/sultanarabi161" target="_blank">GitHub</a></li>
-                        <li><a href="https://twitter.com/sultanarabi161" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/sultanarabi161" target="_blank">Instagram</a></li>
+                    <h5 class="sultanarabi161-footer">Follow Me</h5>
+                    <ul class="list-unstyled sultanarabi161-footer">
+                        <li><a href="https://www.linkedin.com/in/sultanarabi161" target="_blank" class="sultanarabi161-footer">LinkedIn</a></li>
+                        <li><a href="https://github.com/sultanarabi161" target="_blank" class="sultanarabi161-footer">GitHub</a></li>
+                        <li><a href="https://twitter.com/sultanarabi161" target="_blank" class="sultanarabi161-footer">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/sultanarabi161" target="_blank" class="sultanarabi161-footer">Instagram</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="text-center mt-3">
-                <p>&copy; 2024 Sultan Muhammad Arabi. All rights reserved. | 
-                   <a href="https://sultanarabi161.github.io/" target="_blank">sultanarabi161.github.io</a> | 
-                   <a href="https://sultanarabi.pages.dev/" target="_blank">sultanarabi.pages.dev</a>
+            <div class="text-center mt-3 sultanarabi161-footer">
+                <p class="sultanarabi161-footer">&copy; 2024 Sultan Muhammad Arabi. All rights reserved. | 
+                   <a href="https://sultanarabi161.github.io/" target="_blank" class="sultanarabi161-footer">sultanarabi161.github.io</a> | 
+                   <a href="https://sultanarabi.pages.dev/" target="_blank" class="sultanarabi161-footer">sultanarabi.pages.dev</a>
                 </p>
             </div>
         </div>
@@ -586,7 +736,7 @@
             });
             
             // Contact form submission
-            $('#contactForm').on('submit', function(e) {
+            $('#sultanarabi161-contactForm').on('submit', function(e) {
                 e.preventDefault();
                 alert('Thank you for your message! Sultan Arabi will get back to you soon.');
                 this.reset();
