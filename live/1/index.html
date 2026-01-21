@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Live Player</title>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <style>
+    html,body{
+      margin:0;
+      padding:0;
+      width:100%;
+      height:100%;
+      background:#000;
+    }
+    video{
+      width:100%;
+      height:100%;
+    }
+  </style>
+</head>
+<body>
+
+<video id="video" controls autoplay playsinline></video>
+
+<script>
+var video = document.getElementById('video');
+var videoSrc = "https://tgs5.myluck1.top:8088/mobile/stream1_240p/playlist.m3u8?vidictid=204747877172&id=2&pk=060ec159ea1187d544f8699af0a9c2d3157ca74e7cc8145d4b755c7f03cf3f725170a61a246db22e9fa8fa90127eb352ba552ccb1053133e95cb7f428da9735a";
+
+if (Hls.isSupported()) {
+  var hls = new Hls();
+  hls.loadSource(videoSrc);
+  hls.attachMedia(video);
+} 
+else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+  video.src = videoSrc;
+}
+</script>
+
+</body>
+</html>
