@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waiting For You</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:850px;
+    text-align:center;
+    background:#111827;
+    border-radius:20px;
+    padding:40px 25px;
+    box-shadow:0 0 30px rgba(0,0,0,.4);
+}
+
+h1{
+    font-size:2.4rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-bottom:35px;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+.section{
+    margin:30px 0;
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+}
+
+.timer{
+    font-size:1.6rem;
+    font-weight:bold;
+    line-height:1.8;
+}
+
+.footer{
+    margin-top:40px;
+    color:#cbd5e1;
+    line-height:2;
+    font-size:1rem;
+}
+
+a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+small{
+    display:block;
+    margin-top:20px;
+    opacity:.7;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>I'm Waiting For You.</h1>
+
+<p class="subtitle">
+No matter how long it takes, I'll keep waiting.<br>
+This page started counting on <strong>25 July 2026</strong> and will continue until <strong>25 July 2031</strong>.
+</p>
+
+<div class="section">
+<h2>⏳ Time Remaining</h2>
+<div class="timer" id="remaining"></div>
+</div>
+
+<div class="section">
+<h2>🕰 Time Elapsed</h2>
+<div class="timer" id="elapsed"></div>
+</div>
+
+<div class="footer">
+
+<p><strong>I'm waiting for you.</strong></p>
+
+<p>
+You can find <strong>sultanarabi161</strong> on almost any social media platform.
+</p>
+
+<p>
+<strong>Ping me anytime.</strong><br>
+I usually reply faster than your Wi-Fi.
+</p>
+
+<small>
+Made with patience ❤️
+</small>
+
+</div>
+
+</div>
+
+<script>
+
+const start = new Date(2026,6,25,0,0,0); // 25 July 2026
+const end   = new Date(2031,6,25,0,0,0); // 25 July 2031
+
+function diff(from,to){
+
+    let current = new Date(from);
+
+    let years=0,months=0;
+
+    while(true){
+        let next=new Date(current);
+        next.setFullYear(next.getFullYear()+1);
+        if(next<=to){
+            years++;
+            current=next;
+        }else break;
+    }
+
+    while(true){
+        let next=new Date(current);
+        next.setMonth(next.getMonth()+1);
+        if(next<=to){
+            months++;
+            current=next;
+        }else break;
+    }
+
+    let ms=to-current;
+
+    let days=Math.floor(ms/86400000);
+    ms%=86400000;
+
+    let hours=Math.floor(ms/3600000);
+    ms%=3600000;
+
+    let minutes=Math.floor(ms/60000);
+    ms%=60000;
+
+    let seconds=Math.floor(ms/1000);
+
+    return `${years} Year${years!=1?'s':''}, ${months} Month${months!=1?'s':''}, ${days} Day${days!=1?'s':''}<br>${hours} Hour${hours!=1?'s':''}, ${minutes} Minute${minutes!=1?'s':''}, ${seconds} Second${seconds!=1?'s':''}`;
+}
+
+function update(){
+
+    const now=new Date();
+
+    if(now<end){
+        document.getElementById("remaining").innerHTML=diff(now,end);
+    }else{
+        document.getElementById("remaining").innerHTML="Time is over.";
+    }
+
+    document.getElementById("elapsed").innerHTML=diff(start,now);
+
+}
+
+update();
+setInterval(update,1000);
+
+</script>
+
+</body>
+</html>
